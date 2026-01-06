@@ -1,2 +1,93 @@
-jangan di sentuh ygy , lagi belajar
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backdock Academy</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f8f9fa; color: #333; }
+
+        /* Navbar */
+        nav { background: #1a252f; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; color: white; }
+        nav h1 { font-size: 1.5rem; letter-spacing: 2px; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { color: #ecf0f1; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: #3498db; }
+
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1600x900/?coding,computer'); background-size: cover; background-position: center; color: white; text-align: center; padding: 150px 20px; }
+        .hero h2 { font-size: 3.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        .hero button { padding: 15px 40px; font-size: 1.1rem; background: #e74c3c; color: white; border: none; cursor: pointer; border-radius: 50px; font-weight: bold; transition: 0.3s; }
+        .hero button:hover { background: #c0392b; transform: scale(1.05); }
+
+        /* Course Grid */
+        .container { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; color: #2c3e50; }
+        
+        .course-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+        .card-body { padding: 25px; }
+        .card h3 { margin-bottom: 10px; color: #2c3e50; }
+        .card p { color: #7f8c8d; line-height: 1.6; margin-bottom: 20px; }
+        .card button { width: 100%; padding: 12px; background: #3498db; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; }
+        .card button:hover { background: #2980b9; }
+
+        /* Footer */
+        footer { background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>BACKDOCK</h1>
+        <ul>
+            <li><a href="#">Kelas</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h2>Kuasai Skill Digital</h2>
+        <p>Belajar coding, desain, dan marketing dari mentor berpengalaman.</p>
+        <button onclick="alert('Sabar ya Jon, fitur ini lagi dibuat!')">Mulai Belajar Gratis</button>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">Kelas Populer</h2>
+        <div class="course-grid">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Frontend Dasar</h3>
+                    <p>Membangun tampilan website yang menarik dengan HTML, CSS, dan JavaScript modern.</p>
+                    <button>Lihat Silabus</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Backend Python</h3>
+                    <p>Belajar logika server dan database menggunakan bahasa Python yang powerful.</p>
+                    <button>Lihat Silabus</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h3>Fullstack Developer</h3>
+                    <p>Paket komplit dari frontend sampai backend untuk karir profesionalmu.</p>
+                    <button>Lihat Silabus</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Backdock Academy - Dibuat sambil belajar</p>
+    </footer>
+
+</body>
+</html>
 
